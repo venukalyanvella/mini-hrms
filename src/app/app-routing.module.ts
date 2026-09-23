@@ -6,6 +6,10 @@ const routes: Routes = [
     path:'',
     loadChildren:()=> import('./layout/layout.module').then(m=>m.LayoutModule),
     pathMatch:'full'
+  },
+  {
+    path:'employees',
+    loadChildren:()=> import('./features/employees/employees.module').then(m=>m.EmployeesModule)
   }
 ];
 
